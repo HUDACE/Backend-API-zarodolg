@@ -17,5 +17,5 @@ app.use('/file', file_modul);
 app.use('/email', email_modul);
 
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}...`);
+    console.log(`A szerver ezen a porton halgatózik: ${port}...`);
 });
