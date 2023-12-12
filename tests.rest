@@ -1,3 +1,39 @@
 GET http://localhost:5000/db/dolgozatok
 
 ###
+
+POST http://localhost:5000/db/dolgozatok
+Content-Type: application/json
+{
+    "name": "Tibor",
+    "email": "dtomibite@gmail.com",
+    "passwd": "t"
+}
+
+### 
+
+POST http://localhost:5000/db/logincheck
+Content-Type: application/json
+
+{
+    "email": "dtomibite@gmail.com",
+    "passwd": "ferencváros"
+}
+
+###
+
+GET http://localhost:5000/db/dolgozatok
+Authorization: Bearer 
+
+###
+
+POST http://localhost:5000/email/send
+Content-Type: application/json
+
+{
+    "to": "dezsotamas@turr.hu",
+    "subject": "töszt",
+    "message": "<h1>Hélóóóóó!!!<h1>"
+}
+
+###
